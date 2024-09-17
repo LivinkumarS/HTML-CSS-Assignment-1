@@ -1,0 +1,322 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.head {
+  background-color: rgb(37, 37, 37);
+  padding: 20px;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.head > button {
+  background-color: rgb(187, 35, 35);
+  border-radius: 12px;
+  padding: 7px 12px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.head > p {
+  color: white;
+}
+
+.nav {
+  width: 100vw;
+  padding: 10px;
+  background: rgb(187, 35, 35);
+}
+.nav-content {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.nav-content > .logo-grp {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: nowrap;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  gap: 10px;
+}
+.nav-content > .logo-grp > img {
+  width: 30px;
+  height: 30px;
+}
+.nav-content > .nav-links {
+  width: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+.nav-content > .nav-links > a {
+  cursor: pointer;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  font-size: medium;
+}
+.nav-content > .nav-links > .shop{
+  position: relative;
+}
+.nav-content > .nav-links > .shop>.img1 {
+  width: 25px;
+  height: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.nav-content > .nav-links > .shop>.img2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  position: absolute;
+  top: -5px;
+  right: -7px;
+}
+.mount {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  background-image: url("./images/mountain.jpeg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.mount > .mount-content {
+  position: absolute;
+  bottom: 30px;
+  left: 120px;
+  width: 30vw;
+}
+.mount > .mount-content > button {
+  margin-top: 12px;
+  padding: 5px 12px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-weight: bold;
+  /* border-radius: 7px; */
+  box-shadow: 1px 1px 1px 1px white;
+}
+.mount > .mount-content > button:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+.products {
+  width: 100vw;
+  padding: 30px 120px;
+}
+.product-intro {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.product-intro > .intro1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.product-intro > .intro1 > h1 {
+  font-size: x-large;
+}
+.product-intro > .intro1 > p {
+  font-size: small;
+}
+
+.product-intro > .intro2 {
+  width: 50%;
+}
+.products-list {
+  margin-top: 20px;
+  padding: 20px 0px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.products-list > .product {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: smaller;
+  color: black;
+}
+.products-list > .product {
+  width: 230px;
+}
+.products-list > .product > img {
+  width: 250px;
+  height: 250px;
+}
+.products-list > .product > p {
+  width: 250px;
+}
+
+.conclusion {
+  width: 100vw;
+  height: 55vh;
+  background-image: url("./images/forest.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.conclusion > .conclusion-content {
+  position: absolute;
+  width: 40vw;
+  padding: 10px;
+  bottom: 20px;
+  right: 60px;
+  color: white;
+  font-size: small;
+  text-align: right;
+}
+.conclusion > .conclusion-content > h1 {
+  font-size: x-large;
+}
+.conclusion > .conclusion-content > button {
+  padding: 5px 12px;
+  color: black;
+  background-color: white;
+  /* border-radius: 12px; */
+  box-shadow: 1px 1px 1px white;
+  font-weight: bold;
+}
+.conclusion > .conclusion-content > button:hover {
+  color: white;
+  background: #000;
+  cursor: pointer;
+}
+.conclusion > .conclusion-content > * {
+  margin-bottom: 10px;
+}
+
+.footer {
+  padding: 20px 100px;
+  font-size: small;
+}
+.footer > h1 {
+  font-size: x-large;
+}
+
+@media (max-width: 1000px) {
+  .nav-content > .nav-links,
+  .nav-content > .logo-grp {
+    width: 100%;
+  }
+  .nav-content > .nav-links {
+    justify-content: center;
+    gap: 30px;
+  }
+  .nav-content > .logo-grp {
+    justify-content: center;
+  }
+}
+@media (max-width: 430px) {
+  .nav-content > .nav-links {
+    justify-content: space-between;
+    gap: 0;
+  }
+  .nav-content {
+    margin: 0%;
+  }
+}
+
+@media (max-width: 860px) {
+  .products {
+    padding: 10px 20px;
+  }
+  .products > * {
+    width: 100%;
+  }
+  .mount > .mount-content {
+    left: 30px;
+  }
+}
+
+
+
+
+@media (max-width: 1070px) {
+  .products-list {
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .products-list > .product > img {
+    width: 200px;
+    height: 200px;
+  }
+  .products-list > .product > p {
+    width: 200px;
+  }
+  .products-list > .product{
+    width: 200px;
+  }
+}
+
+@media (max-width: 880px) {
+  .mount > .mount-content {
+    bottom: 20px;
+    left: 20px;
+    width: 80vw;
+  }
+  .mount > .mount-content > h1 {
+    font-size: x-large;
+  }
+  .mount > .mount-content > p {
+    font-size: smaller;
+  }
+
+  .conclusion > .conclusion-content {
+    right: 0px;
+    bottom: 0px;
+    width: 80vw;
+  }
+  .conclusion > .conclusion-content > h1 {
+    font-size: large;
+  }
+  .conclusion > .conclusion-content > p {
+    font-size: smaller;
+  }
+  .footer {
+    padding: 10px;
+    font-size: small;
+  }
+  .footer > h1 {
+    font-size: larger;
+  }
+  .footer > p {
+    font-size: smaller;
+  }
+}
+
